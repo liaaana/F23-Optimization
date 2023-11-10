@@ -271,6 +271,8 @@ def russels_approximation_method(table, ns, nd):
 
     # Iterate until either row or column requirements are satisfied
     while np.any(table[:-1, -1] > 0) and np.any(table[-1, :-1] > 0):
+        print_table_with_headers(table, ns, nd)
+        print(x0)
 
         # Calculate maximum values for each row considering non-negative supply
         row_max = []
@@ -301,7 +303,7 @@ def russels_approximation_method(table, ns, nd):
         # Find the cell with the minimum value considering row and column maxima
         row_index = -1
         col_index = -1
-        min_val = 0
+        min_val = 100000000
         for i in range(ns):
             if table[i, -1] <= 0:
                 continue
@@ -311,6 +313,12 @@ def russels_approximation_method(table, ns, nd):
                     continue
                 col_maxima = col_max[j]
                 if table[i, j] - row_maxima - col_maxima < min_val:
+                    min_val = table[i, j] - row_maxima - col_maxima
+                    row_index = i
+                    col_index = j
+                elif (table[i, j] - row_maxima - col_maxima) == min_val and (table[i, j] * min(
+                        table[i, -1], table[-1, j])) < (
+                        table[row_index, col_index] * min(table[row_index, -1], table[-1, col_index])):
                     min_val = table[i, j] - row_maxima - col_maxima
                     row_index = i
                     col_index = j
