@@ -271,9 +271,6 @@ def russels_approximation_method(table, ns, nd):
 
     # Iterate until either row or column requirements are satisfied
     while np.any(table[:-1, -1] > 0) and np.any(table[-1, :-1] > 0):
-        print_table_with_headers(table, ns, nd)
-        print(x0)
-
         # Calculate maximum values for each row considering non-negative supply
         row_max = []
         for i in range(ns):
