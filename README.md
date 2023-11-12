@@ -1,6 +1,6 @@
 # Transportation Problem Solver
 
-This Python code solves the transportation problem using various methods, including the North-West Corner Method, Vogel’s Approximation Method, and Russell’s Approximation Method.
+This Python code solves the transportation problem using the North-West Corner Method, Vogel’s Approximation Method, and Russell’s Approximation Method.
 
 ## Table of Contents
 
