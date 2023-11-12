@@ -45,4 +45,4 @@ An [online calculator](https://cbom.atozmath.com/CBOM/Transportation.aspx?q=vam&
 To use the code, run it in a Python environment and follow the screenshots to input the transportation problem details. The code will display the transportation problem table, the initial basic feasible solution obtained by different methods, and the total initial cost.
 
 ```bash
-python script_name.py
+python main.py
