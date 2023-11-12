@@ -1,47 +1,33 @@
-# Transportation Problem Solver
+# Transportation Problem
 
-This Python code solves the transportation problem using the North-West Corner Method, Vogel’s Approximation Method, and Russell’s Approximation Method.
+## About the Project
+This program implements the search of initial basic feasible solution for Transporation Problem.
+Transportation problem is another kind of linear programming problem in which commodity
+is distributed from a set of sources to a set of destinations subject to the supply and demand
+of the sources and destination respectively such that the total cost of transportation is minimized.\
+This program uses North-West corner method, Vogel's approximation method, and Russell's approximation method
+to find the initial basic feasible solution. 
 
-## Table of Contents
+## Run
 
-- [Introduction](#introduction)
-- [Algorithms](#algorithms)
-  - [North-West Corner Method](#north-west-corner-method)
-  - [Vogel’s Approximation Method](#vogels-approximation-method)
-  - [Russell’s Approximation Method](#russels-approximation-method)
-- [Input and Output](#input-and-output)
-- [Testing](#testing)
-- [Usage](#usage)
-
-## Introduction
-
-The transportation problem involves minimizing the cost of transporting goods from multiple sources to multiple destinations while satisfying supply and demand constraints. This Python script provides solutions to the transportation problem using different algorithms.
-
-## Algorithms
-
-### North-West Corner Method
-
-The North-West Corner Method is a simple heuristic for obtaining an initial basic feasible solution. It starts from the top-left (north-west) corner of the cost matrix and allocates as much as possible until the supply or demand of a source or destination is exhausted.
-
-### Vogel’s Approximation Method
-
-Vogel’s Approximation Method is an improvement over the North-West Corner Method. It considers the differences between the two smallest costs in each row and column, allocating to the cell with the maximum difference. This method aims to balance the assignment more efficiently.
-
-### Russell’s Approximation Method
-
-Russell’s Approximation Method is another heuristic for solving the transportation problem. It iteratively selects the cell with the minimum value, considering row and column maxima. This method often provides more balanced allocations.
-
-## Input and Output
-
-The code takes input for the transportation problem, including the number of sources and destinations, supply and demand vectors, and the cost matrix. It then outputs the transportation problem table, the initial basic feasible solution obtained by different methods, and the total initial cost.
+1. Clone the repository using `git clone https://github.com/liaaana/F23-Optimization-Task3`
+2. Run the program using `python main.py`
 
 ## Testing
-
 An [online calculator](https://cbom.atozmath.com/CBOM/Transportation.aspx?q=vam&q1=3%2c2%2c7%2c6%3b7%2c5%2c2%2c3%3b2%2c5%2c4%2c5%6050%2c60%2c25%6060%2c40%2c20%2c15%60S1%2cS2%2cS3%60D1%2cD2%2cD3%2cD4%60ram%60false%60false%60MIN%60false&do=1#PrevPart) was used to check the code results during testing.
 
-## Usage
+### Input
+The program input contains:
+- `S` — vector of coefficients of supply
+- `D` — vector of coefficients of demand
+- `C` — matrix of coefficients of costs
 
-To use the code, run it in a Python environment and follow the screenshots to input the transportation problem details. The code will display the transportation problem table, the initial basic feasible solution obtained by different methods, and the total initial cost.
+### Output
+The program output contains:
+- input parameter table (which was constructed using matrix `C`, vectors `S` and `D`)
+- 3 vectors of initial basic feasible solution - `x0` using North-West corner method, Vogel's approximation method, and Russell's approximation method
+- total initial costs for each solution
 
-```bash
-python main.py
+![image](https://github.com/liaaana/F23-Optimization-Task3/assets/71718152/58db528c-7f76-4a96-9f6c-8877657dd76d)
+![image](https://github.com/liaaana/F23-Optimization-Task3/assets/71718152/773117c8-78d3-4887-8e1c-b0e19e46129d)
+
