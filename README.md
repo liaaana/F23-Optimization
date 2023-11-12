@@ -12,7 +12,6 @@ This Python code solves the transportation problem using various methods, includ
 - [Input and Output](#input-and-output)
 - [Testing](#testing)
 - [Usage](#usage)
-- [Contributing](#contributing)
 
 ## Introduction
 
