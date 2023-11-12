@@ -38,7 +38,7 @@ The code takes input for the transportation problem, including the number of sou
 
 ## Testing
 
-Here are the outcomes from running the code and an online calculator on three distinct tests.
+An [online calculator](https://cbom.atozmath.com/CBOM/Transportation.aspx?q=vam&q1=3%2c2%2c7%2c6%3b7%2c5%2c2%2c3%3b2%2c5%2c4%2c5%6050%2c60%2c25%6060%2c40%2c20%2c15%60S1%2cS2%2cS3%60D1%2cD2%2cD3%2cD4%60ram%60false%60false%60MIN%60false&do=1#PrevPart) was used to check the code results during testingю
 
 ## Usage
 
